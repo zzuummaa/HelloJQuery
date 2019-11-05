@@ -24,7 +24,8 @@ html,body {
 
 .header {
     width: 100%;
-    padding: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: var(--main-dark-color);
     /*border-bottom: 1px solid #8A80A8; !* Параметры границы *!*/
     box-shadow: 0 1px rgba(0,0,0,.75);
@@ -32,14 +33,33 @@ html,body {
 
 .right-menu {
     display: flex;
-    align-items: stretch;
-    direction: rtl;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.header-input {
-    text-align: start!important;
-}
-
-.white-color-text {
+.header-button {
+    margin: 0 16px 0 0;
     color: white;
+    text-decoration: none;
+}
+
+.header-button:hover {
+    color: #D3D3D3;
+    cursor: pointer;
+}
+
+.header-search {
+    font-size: medium;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px; /* Safari/Chrome, other WebKit */
+    -moz-border-radius: 4px;    /* Firefox, other Gecko */
+    -khtml-border-radius: 4px;  /* Opera/IE 8+ */
+    margin-right: 16px;
+    width: 200px;
+    height: 24px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
