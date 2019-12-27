@@ -50,7 +50,7 @@ html,body {
 
 .header-search {
     font-size: medium;
-    border: 0;
+    border: 2px solid var(--main-dark-color);
     outline: none;
     border-radius: 4px;
     -webkit-border-radius: 4px; /* Safari/Chrome, other WebKit */
@@ -61,6 +61,10 @@ html,body {
     height: 24px;
     padding-right: 8px;
     padding-left: 8px;
+}
+
+.header-search:focus {
+    border: 2px solid dodgerblue;
 }
 
 .sign-up-form-background {
@@ -74,6 +78,66 @@ html,body {
 }
 
 .sign-up-form-wrapper {
+    border-radius: 4px;
+    -webkit-border-radius: 4px; /* Safari/Chrome, other WebKit */
+    -moz-border-radius: 4px;    /* Firefox, other Gecko */
+    -khtml-border-radius: 4px;  /* Opera/IE 8+ */
     background-color: white;
-    padding: 16px;
+    padding: 32px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-group {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.input-label {
+    margin-bottom: 6px;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.form-dd {
+    margin-inline-start: 0;
+}
+
+.input-block:focus {
+    border: 1px solid dodgerblue;
+}
+
+.input-block {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    -webkit-border-radius: 4px; /* Safari/Chrome, other WebKit */
+    -moz-border-radius: 4px;    /* Firefox, other Gecko */
+    -khtml-border-radius: 4px;  /* Opera/IE 8+ */
+    padding: 10px;
+    font-size: large;
+}
+
+.form-button {
+    margin-top: 16px;
+    height: 42px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px; /* Safari/Chrome, other WebKit */
+    -moz-border-radius: 4px;    /* Firefox, other Gecko */
+    -khtml-border-radius: 4px;  /* Opera/IE 8+ */
+    background-color: orange;
+    text-decoration: none;
+}
+
+.form-button:hover {
+    background-color: darkorange;
+    cursor: pointer;
 }
